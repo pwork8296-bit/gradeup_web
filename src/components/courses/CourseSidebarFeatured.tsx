@@ -17,7 +17,7 @@ export default function CourseSidebarFeatured({
       </h4>
       <div className="space-y-3">
         {courses.map((item) => {
-          const href = item.ctaLink || `/courses/${item.slug || item.id}`;
+          const href = '#';
           return (
             <Link
               key={item.id}

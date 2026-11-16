@@ -127,7 +127,7 @@ export default function LiveCohortsSection({
                   </p>
                 </div>
                 <Link
-                  href={bootcamp.ctaLink}
+                  href="#"
                   className="inline-flex items-center gap-2 bg-[#3B3BD0] hover:bg-[#2A2AA8] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-[#3B3BD0]/30 transition-all hover:translate-y-[-1px]"
                 >
                   {bootcamp.ctaText}
@@ -247,7 +247,7 @@ export default function LiveCohortsSection({
                   <p className="text-xs font-semibold text-[#e5262f] mt-1">{ga4.urgencyText}</p>
                 </div>
                 <Link
-                  href={ga4.ctaLink}
+                  href="#"
                   className="inline-flex items-center gap-2 bg-[#3d4fd6] hover:bg-[#2b37a8] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-[#3d4fd6]/40 transition-all hover:translate-y-[-1px]"
                 >
                   {ga4.ctaText}

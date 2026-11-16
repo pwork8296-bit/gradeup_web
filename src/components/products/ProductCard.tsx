@@ -37,7 +37,7 @@ export default function ProductCard({
 
   const displayImage = thumbnail || image || '';
   const displayInstructor = instructor || instructors || '';
-  const destinationUrl = ctaLink || (slug ? `/courses/${slug}` : '#');
+  const destinationUrl = '#';
   const shouldShowRating = showRating !== undefined ? showRating : rating !== undefined;
   const shouldShowBtn = showActionBtn !== undefined ? showActionBtn : Boolean(ctaLink);
 

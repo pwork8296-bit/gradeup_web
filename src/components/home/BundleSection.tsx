@@ -79,7 +79,7 @@ export default function BundleSection({
                   </div>
 
                   <Link
-                    href={bundle.ctaLink}
+                    href="#"
                     className="inline-flex items-center justify-center gap-2 bg-[#b13b7f] hover:bg-[#9c316f] text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors shadow-md"
                   >
                     <span>Enrol now</span>

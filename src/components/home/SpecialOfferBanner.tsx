@@ -35,7 +35,7 @@ export default function SpecialOfferBanner({
             </div>
 
             <Link
-              href={ctaLink}
+              href="#"
               className="inline-flex items-center gap-4 bg-[#6fbe00] hover:bg-[#5fa300] text-white font-bold text-base px-7 py-3.5 rounded-full shadow-md transition-all duration-200 group"
             >
               <span>{ctaText}</span>
@@ -47,7 +47,7 @@ export default function SpecialOfferBanner({
 
           {/* Right Column (Bundle Image) */}
           <div className="lg:w-1/2 w-full flex justify-center">
-            <Link href={ctaLink} className="block w-full max-w-lg overflow-hidden rounded-3xl shadow-xl hover:scale-102 transition-transform duration-300">
+            <Link href="#" className="block w-full max-w-lg overflow-hidden rounded-3xl shadow-xl hover:scale-102 transition-transform duration-300">
               <img
                 src={image}
                 alt={title}

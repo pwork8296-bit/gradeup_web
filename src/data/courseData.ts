@@ -43,7 +43,7 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     priceNote: 'incl. GST',
     urgencyText: 'Fee increases from the next cohort',
     ctaText: 'Enrol Now – Seats Filling Fast',
-    ctaLink: '/courses/live-performance-marketing-bootcamp',
+    ctaLink: '#',
     brandColor: '#3B3BD0',
   },
   {
@@ -68,7 +68,7 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     priceNote: '+ 18% GST',
     urgencyText: 'Price increases from the next cohort',
     ctaText: 'Join Now',
-    ctaLink: '/courses/master-google-analytics-4-live-cohort',
+    ctaLink: '#',
     brandColor: '#3d4fd6',
   },
 ];
@@ -84,7 +84,7 @@ export const FLAGSHIP_COURSES_DATA: FlagshipCourse[] = [
     ratingsCount: 80,
     originalPrice: 8000,
     discountedPrice: 3999,
-    ctaLink: '/courses/advanced-tracking-course',
+    ctaLink: '#',
   },
   {
     id: 'flagship-google-ads-2025',
@@ -96,7 +96,7 @@ export const FLAGSHIP_COURSES_DATA: FlagshipCourse[] = [
     ratingsCount: 39,
     originalPrice: 8000,
     discountedPrice: 4199,
-    ctaLink: '/courses/google-ads-course-2025',
+    ctaLink: '#',
   },
 ];
 
@@ -112,7 +112,7 @@ export const SPECIAL_OFFER_DATA = {
   ],
   image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/w6FDi7coursesin1bundle1.jpg',
   ctaText: 'Enrol Now',
-  ctaLink: '/courses/combo-package',
+  ctaLink: '#',
 };
 
 export const BUNDLES_DATA: BundleCourse[] = [
@@ -129,7 +129,7 @@ export const BUNDLES_DATA: BundleCourse[] = [
       { name: 'Google Ads Checklist', price: 799 },
     ],
     price: '₹6,499/-',
-    ctaLink: '/courses/special-bundle-offer',
+    ctaLink: '#',
   },
   {
     id: 'performance-stack',
@@ -145,7 +145,7 @@ export const BUNDLES_DATA: BundleCourse[] = [
       { name: 'AI Landing Page', price: 7080 },
     ],
     price: '₹8,499/-',
-    ctaLink: '/courses/the-performance-stack',
+    ctaLink: '#',
   },
 ];
 
@@ -162,7 +162,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 25000,
     isBestseller: true,
     category: 'Performance Marketing',
-    ctaLink: '/courses/live-performance-marketing-bootcamp',
+    ctaLink: '#',
   },
   {
     id: 'c-live-2',
@@ -176,7 +176,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 8000,
     isBestseller: true,
     category: 'Analytics & Tracking',
-    ctaLink: '/courses/master-google-analytics-4-live-cohort',
+    ctaLink: '#',
   },
   {
     id: 'c1',
@@ -190,7 +190,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 7080,
     isBestseller: true,
     category: 'AI & Automation',
-    ctaLink: '/courses/ai-landing-page-mastery',
+    ctaLink: '#',
   },
   {
     id: 'c2',
@@ -204,7 +204,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 19470,
     isBestseller: true,
     category: 'AI & Automation',
-    ctaLink: '/courses/ai-first-digital-marketing-course',
+    ctaLink: '#',
   },
   {
     id: 'c3',
@@ -218,7 +218,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 16520,
     isBestseller: true,
     category: 'Performance Marketing',
-    ctaLink: '/courses/cohort-9-performance-marketing-d2c',
+    ctaLink: '#',
   },
   {
     id: 'c4',
@@ -232,7 +232,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 24780,
     isBestseller: true,
     category: 'Performance Marketing',
-    ctaLink: '/courses/digital-marketing-bootcamp-4',
+    ctaLink: '#',
   },
   {
     id: 'c5',
@@ -246,7 +246,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 4199,
     isBestseller: true,
     category: 'Google Ads',
-    ctaLink: '/courses/google-ads-course-2025',
+    ctaLink: '#',
   },
   {
     id: 'c6',
@@ -260,7 +260,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 3999,
     isBestseller: true,
     category: 'Analytics & Tracking',
-    ctaLink: '/courses/advanced-tracking-course',
+    ctaLink: '#',
   },
   {
     id: 'c7',
@@ -274,7 +274,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 8000,
     isBestseller: true,
     category: 'Analytics & Tracking',
-    ctaLink: '/courses/data-analytics-for-digital-marketers',
+    ctaLink: '#',
   },
   {
     id: 'c8',
@@ -288,7 +288,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 6499,
     isBestseller: true,
     category: 'Bundles & Tools',
-    ctaLink: '/courses/google-ads-tracking-bundle',
+    ctaLink: '#',
   },
   {
     id: 'c9',
@@ -302,7 +302,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 3499,
     isBestseller: true,
     category: 'SEO',
-    ctaLink: '/courses/seo-mastery-course-recorded',
+    ctaLink: '#',
   },
   {
     id: 'c10',
@@ -316,7 +316,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 4720,
     isBestseller: true,
     category: 'AI & Automation',
-    ctaLink: '/courses/ai-powered-shopify-development',
+    ctaLink: '#',
   },
   {
     id: 'c11',
@@ -330,7 +330,7 @@ export const ALL_COURSES_DATA: CourseCardItem[] = [
     discountedPrice: 799,
     isBestseller: true,
     category: 'Bundles & Tools',
-    ctaLink: '/courses/google-ads-checklist',
+    ctaLink: '#',
   },
 ];
 
@@ -342,7 +342,7 @@ export const FEATURED_COURSES_SIDEBAR_DATA: FeaturedCourseItem[] = [
     price: '₹25,000',
     originalPrice: '₹45,000',
     slug: 'live-performance-marketing-bootcamp',
-    ctaLink: '/courses/live-performance-marketing-bootcamp',
+    ctaLink: '#',
     tag: 'Live Cohort',
   },
   {
@@ -352,7 +352,7 @@ export const FEATURED_COURSES_SIDEBAR_DATA: FeaturedCourseItem[] = [
     price: '₹8,000',
     originalPrice: '₹16,000',
     slug: 'master-google-analytics-4-live-cohort',
-    ctaLink: '/courses/master-google-analytics-4-live-cohort',
+    ctaLink: '#',
     tag: 'Cohort 1',
   },
   {
@@ -362,7 +362,7 @@ export const FEATURED_COURSES_SIDEBAR_DATA: FeaturedCourseItem[] = [
     price: '₹6,499',
     originalPrice: '₹15,000',
     slug: 'google-ads-tracking-bundle',
-    ctaLink: '/courses/google-ads-tracking-bundle',
+    ctaLink: '#',
     tag: 'Best Value',
   },
 ];

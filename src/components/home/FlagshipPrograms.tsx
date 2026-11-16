@@ -76,7 +76,7 @@ export default function FlagshipPrograms({
                 {/* View Details Button */}
                 <div className="mt-6">
                   <Link
-                    href={course.ctaLink}
+                    href="#"
                     className="block w-full text-center bg-[#3c4dc9] hover:bg-[#a93284] text-white font-medium text-base py-3 px-6 rounded-lg transition-colors duration-200"
                   >
                     View Details

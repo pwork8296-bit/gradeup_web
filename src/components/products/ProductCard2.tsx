@@ -150,7 +150,7 @@ export default function ProductCard2({
         </div>
 
         {/* Title */}
-        <Link href={slug ? `/products/${slug}` : '#'}>
+        <Link href="#">
           <h3 className="mt-3 text-[#0f172a] hover:text-[#7c3aed] font-bold text-[16px] sm:text-[17px] leading-snug tracking-tight line-clamp-2 transition-colors">
             {title}
           </h3>
