@@ -1,0 +1,60 @@
+windows
+
+New-Item -ItemType Directory -Force -Path `
+  "src/app/(web)/products/[slug]", `
+  "src/app/(web)/cart", `
+  "src/app/(web)/checkout", `
+  "src/app/(web)/user", `
+  "src/app/(web)/blogs", `
+  "src/app/(auth)/login", `
+  "src/services", `
+  "src/types", `
+  "src/data", `
+  "src/context", `
+  "src/components/layout", `
+  "src/components/ui", `
+  "src/components/products", `
+  "src/components/cart", `
+  "src/components/user", `
+  "src/components/blogs"
+
+
+
+$files = @(
+  "src/app/layout.tsx",
+  "src/app/(web)/layout.tsx",
+  "src/app/(web)/page.tsx",
+  "src/app/(web)/products/page.tsx",
+  "src/app/(web)/products/[slug]/page.tsx",
+  "src/app/(web)/cart/page.tsx",
+  "src/app/(web)/checkout/page.tsx",
+  "src/app/(web)/user/page.tsx",
+  "src/app/(web)/blogs/page.tsx",
+  "src/components/layout/Header.tsx",
+  "src/components/layout/Footer.tsx",
+  "src/components/products/ProductCard.tsx",
+  "src/components/products/ProductGrid.tsx",
+  "src/components/cart/CartItemRow.tsx",
+  "src/components/user/OrderHistoryList.tsx",
+  "src/components/blogs/BlogCard.tsx",
+  "src/context/CartContext.tsx",
+  "src/context/AuthContext.tsx",
+  "src/services/productService.ts",
+  "src/services/cartService.ts",
+  "src/services/orderService.ts",
+  "src/services/userService.ts",
+  "src/services/blogService.ts",
+  "src/types/productTypes.ts",
+  "src/types/cartTypes.ts",
+  "src/types/orderTypes.ts",
+  "src/types/userTypes.ts",
+  "src/types/blogTypes.ts",
+  "src/data/navigationData.ts",
+  "src/data/productData.ts",
+  "src/data/blogData.ts"
+)
+
+foreach ($file in $files) {
+  New-Item -ItemType File -Force -Path $file | Out-Null
+}
+
