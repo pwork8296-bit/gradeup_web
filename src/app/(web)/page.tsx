@@ -22,7 +22,7 @@ export default function HomePage() {
       <LiveCohortsSection />
 
       {/* 3. Flagship Programs / Courses */}
-      <FlagshipPrograms />
+      {/* <FlagshipPrograms /> */}
 
       {/* 4. Special Offer Banner (Full Stack Digital Marketer) */}
       <SpecialOfferBanner />

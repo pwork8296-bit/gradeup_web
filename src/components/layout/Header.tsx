@@ -111,7 +111,7 @@ export default function Header({ cartItemCount = 0, logoSrc }: HeaderProps) {
 
             {/* Login Button */}
             <Link
-              href="/login"
+              href="/#"
               className="bg-[#2563eb] hover:bg-[#1d4ed8] active:bg-[#1e40af] text-white font-medium text-[15px] px-8 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Login
@@ -121,7 +121,7 @@ export default function Header({ cartItemCount = 0, logoSrc }: HeaderProps) {
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-4 md:hidden">
             <Link
-              href="/cart"
+              href="/#"
               aria-label="Shopping Cart"
               className="relative p-2 text-gray-700 hover:text-blue-600 transition-colors"
             >
@@ -203,7 +203,7 @@ export default function Header({ cartItemCount = 0, logoSrc }: HeaderProps) {
           </div>
           <div className="pt-2">
             <Link
-              href="/login"
+              href="/#"
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full text-center block bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-medium text-base px-6 py-2.5 rounded-full transition-colors shadow-sm"
             >
