@@ -8,9 +8,6 @@ export const metadata: Metadata = {
   icons: {
     icon: siteConfig.logo,
   },
-  icons: {
-    icon: siteConfig.logo,
-  },
 };
 
 export default function AdminAuthLayout({ children }: { children: React.ReactNode }) {
