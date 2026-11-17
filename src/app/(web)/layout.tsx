@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { siteConfig } from '@/config/siteConfig';
 
 export default function WebLayout({
   children,
@@ -9,9 +10,9 @@ export default function WebLayout({
 }) {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-gray-50">
-      <Header />
+      <Header logoSrc={siteConfig.logo} />
       <main className="flex-1">{children}</main>
-      <Footer copyright="© UT Digital. All rights reserved." />
+      <Footer copyright={`© ${siteConfig.name}. All rights reserved.`} />
     </div>
   );
 }

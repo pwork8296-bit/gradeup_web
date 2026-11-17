@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { siteConfig } from '@/config/siteConfig';
 
 export default function WebAuthLayout({
   children,
@@ -11,9 +12,14 @@ export default function WebAuthLayout({
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-md text-center mb-6">
-        <Link href="/" className="inline-flex items-center gap-2 no-underline text-slate-900 hover:opacity-90 transition">
+        <Link href="/" className="inline-flex items-center gap-2.5 no-underline text-slate-900 hover:opacity-90 transition">
+          <img
+            src={siteConfig.logo}
+            alt={siteConfig.name}
+            className="h-10 w-auto object-contain"
+          />
           <span className="font-extrabold text-2xl tracking-tight text-blue-600">
-            UT Digital Media
+            {siteConfig.name}
           </span>
         </Link>
       </div>
@@ -23,7 +29,7 @@ export default function WebAuthLayout({
       </main>
 
       <footer className="mt-8 text-center text-xs text-slate-400">
-        © 2026 Umar Tazkeer Digital Academy. All rights reserved.
+        © 2026 {siteConfig.name}. All rights reserved.
       </footer>
     </div>
   );

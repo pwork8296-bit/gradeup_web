@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Header2Props } from '@/types/navigationTypes';
+import { siteConfig } from '@/config/siteConfig';
 import {
   HEADER2_LEFT_LINKS,
   HEADER2_RIGHT_LINKS,
@@ -15,6 +16,7 @@ export default function Header2({
   notificationCount = 0,
   onSearch,
   logoHref = '/',
+  logoSrc = siteConfig.logo,
 }: Header2Props) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,35 +53,13 @@ export default function Header2({
               </svg>
             </button>
 
-            {/* Udemy Logo */}
+            {/* Logo */}
             <Link href={logoHref} className="flex items-center flex-shrink-0 group">
-              <div className="flex items-center">
-                {/* Udemy Stylized Logo SVG */}
-                <svg
-                  className="h-8 w-auto text-black"
-                  viewBox="0 0 91 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Purple Accent above u */}
-                  <path
-                    d="M10.8 1.2L18.4 8.8L16.2 11L10.8 5.6L5.4 11L3.2 8.8L10.8 1.2Z"
-                    fill="#a435f0"
-                  />
-                  {/* "udemy" lettering */}
-                  <text
-                    x="0"
-                    y="29"
-                    fontFamily="Arial, Helvetica, sans-serif"
-                    fontSize="24"
-                    fontWeight="800"
-                    fill="#1c1d1f"
-                    letterSpacing="-0.8px"
-                  >
-                    ûdemy
-                  </text>
-                </svg>
-              </div>
+              <img
+                src={logoSrc}
+                alt={siteConfig.name}
+                className="h-8 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Left Links: Explore, Subscribe */}

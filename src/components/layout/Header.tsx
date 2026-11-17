@@ -4,8 +4,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { NAV_ITEMS } from '@/data/navigationData';
 import { HeaderProps } from '@/types/navigationTypes';
+import { siteConfig } from '@/config/siteConfig';
 
-export default function Header({ cartItemCount = 0, logoSrc }: HeaderProps) {
+export default function Header({
+  cartItemCount = 0,
+  logoSrc = siteConfig.logo,
+}: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -15,59 +19,11 @@ export default function Header({ cartItemCount = 0, logoSrc }: HeaderProps) {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              {logoSrc ? (
-                <img
-                  src={logoSrc}
-                  alt="GradeUp Academy"
-                  className="h-12 w-auto object-contain"
-                />
-              ) : (
-                <div className="flex items-center gap-2.5">
-                  <div className="flex flex-col items-center">
-                    <svg
-                      className="w-10 h-10 transition-transform group-hover:scale-105 duration-200"
-                      viewBox="0 0 64 64"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <defs>
-                        <linearGradient id="utGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="#00b4d8" />
-                          <stop offset="50%" stopColor="#6366f1" />
-                          <stop offset="100%" stopColor="#d946ef" />
-                        </linearGradient>
-                        <linearGradient id="utGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-                          <stop offset="0%" stopColor="#ec4899" />
-                          <stop offset="100%" stopColor="#8b5cf6" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M32 6L54 18V44L32 56L10 44V18L32 6Z"
-                        stroke="url(#utGrad1)"
-                        strokeWidth="3.5"
-                        strokeLinejoin="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M32 18L44 25V39L32 46L20 39V25L32 18Z"
-                        stroke="url(#utGrad2)"
-                        strokeWidth="3"
-                        strokeLinejoin="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M26 27H38M32 27V41"
-                        stroke="#2563eb"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                    <span className="text-[11px] font-bold tracking-tight text-slate-800 leading-none mt-1">
-                      UT DIGITAL
-                    </span>
-                  </div>
-                </div>
-              )}
+              <img
+                src={logoSrc}
+                alt={siteConfig.name}
+                className="h-12 w-auto object-contain"
+              />
             </Link>
           </div>
 

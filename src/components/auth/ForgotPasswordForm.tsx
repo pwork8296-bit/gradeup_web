@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { siteConfig } from '@/config/siteConfig';
 
 export default function ForgotPasswordForm() {
   const [email, setEmail] = useState('');
@@ -22,9 +23,11 @@ export default function ForgotPasswordForm() {
       <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 font-extrabold text-lg mb-3">
-            UT
-          </div>
+          <img
+            src={siteConfig.logo}
+            alt={siteConfig.name}
+            className="inline-block w-12 h-12 rounded-xl object-contain mb-3"
+          />
           <h2 className="text-2xl font-extrabold text-slate-900">Reset Password</h2>
           <p className="text-xs text-slate-500 mt-1">
             Enter your registered email address and we will send you a password recovery link

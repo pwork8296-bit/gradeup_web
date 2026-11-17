@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Mail, ArrowLeft, ArrowRight, CheckCircle } from '@/components/admin/common/AdminIcons';
+import { siteConfig } from '@/config/siteConfig';
 
 export default function AdminForgotPasswordForm() {
   const [email, setEmail] = useState('');
@@ -16,9 +17,11 @@ export default function AdminForgotPasswordForm() {
   return (
     <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-xl border border-slate-200/80">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-600 text-white font-bold text-lg mb-3 shadow-md shadow-blue-500/20">
-          UT
-        </div>
+        <img
+          src={siteConfig.logo}
+          alt={siteConfig.name}
+          className="inline-block w-12 h-12 rounded-xl object-contain mb-3"
+        />
         <h1 className="text-2xl font-bold text-slate-900">Reset Password</h1>
         <p className="text-xs text-slate-500 mt-1">
           Enter your staff email to receive password recovery instructions.

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { siteConfig } from '@/config/siteConfig';
 import {
   LayoutDashboard,
   GraduationCap,
@@ -70,11 +71,13 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
           onClick={isMobile ? onCloseMobile : undefined}
           className="flex items-center gap-2.5 font-bold text-white tracking-wide"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-bold text-base shadow-sm">
-            UT
-          </div>
+          <img
+            src="/app_logo.avif"
+            alt="Gradeup"
+            className="w-8 h-8 object-contain rounded-lg"
+          />
           <div>
-            <span className="block text-sm font-bold text-white leading-tight">Umar Tazkeer</span>
+            <span className="block text-sm font-bold text-white leading-tight">Gradeup</span>
             <span className="block text-[11px] font-medium text-slate-400">Admin Control</span>
           </div>
         </Link>
@@ -105,11 +108,10 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
               key={item.name}
               href={item.href}
               onClick={isMobile ? onCloseMobile : undefined}
-              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-xs font-semibold transition-colors ${
-                isActive
-                  ? 'bg-blue-600/15 text-blue-400 border border-blue-500/30'
-                  : 'text-slate-400 hover:bg-slate-800/60 hover:text-white'
-              }`}
+              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-xs font-semibold transition-colors ${isActive
+                ? 'bg-blue-600/15 text-blue-400 border border-blue-500/30'
+                : 'text-slate-400 hover:bg-slate-800/60 hover:text-white'
+                }`}
             >
               <Icon className={`w-4 h-4 ${isActive ? 'text-blue-400' : 'text-slate-400'}`} />
               <span>{item.name}</span>
@@ -157,9 +159,8 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
 
       {/* Mobile Drawer */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 transform transition-transform duration-200 ease-in-out md:hidden ${
-          isMobileOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 transform transition-transform duration-200 ease-in-out md:hidden ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         {sidebarContent(true)}
       </aside>

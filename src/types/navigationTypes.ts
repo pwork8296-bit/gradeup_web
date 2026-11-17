@@ -36,4 +36,5 @@ export interface Header2Props {
   notificationCount?: number;
   onSearch?: (query: string) => void;
   logoHref?: string;
+  logoSrc?: string;
 }
